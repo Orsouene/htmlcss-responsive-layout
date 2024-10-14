@@ -33,9 +33,9 @@
 
 /* UTILITY */
 
-.debug {
+/* .debug {
   border: 1px solid red;
-}
+} */
 .max-width-100 {
   max-width: 100%;
 }
@@ -76,16 +76,19 @@ h1 {
 h2,
 .display-none {
   color: var(--color-primary);
+  margin-bottom: 20px;
 }
 .vid-list{ margin-bottom: 15px;}
 
-.vid-list:first-child {
+.breve {
   margin-bottom: 30px;
+  margin-left: 20px;
 }
 .iframe {
   background-color: var(--color-white);
   
 }
+
 .span-list{
   font-weight: bold;
  }
@@ -98,6 +101,7 @@ margin: 20px 20px;}
      justify-content: space-between;}
 .social{background-color: var(--color-white);
 border-radius: 30px;
+text-shadow: 2px 2px #b9b9b9ab;
 }
 
  /* END-section- Social */
@@ -174,7 +178,7 @@ padding-right: 20px;}
         .social{ padding: 5px 10px}
 }
 
-/* from tablet to mobile */
+/* from tablet to mobile Aggunitiva */
 @media screen  and (min-width: 577px) {
     h1 {
       padding-left: 10px;
@@ -203,6 +207,12 @@ padding-right: 20px;}
     margin: 0px auto;
     align-items: center;}
     .social{ padding: 2px 20px;}
+
+    .video-list{display: flex;
+                    flex-wrap: wrap;
+                  gap: 35px;}
+    .container{margin: 0px 105px;}
+
  
 }
 
@@ -213,8 +223,9 @@ padding-right: 20px;}
     .iframe{ flex-direction: row;}
      .icon{display: inline-block;} 
    .banner{display: block;}
-
    #footer{flex-direction: row;
    }
    .social{ padding: 2px 30px;}
-}
+    .container {
+      margin: 0px 100px;}
+  }
