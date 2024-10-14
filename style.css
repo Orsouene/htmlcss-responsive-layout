@@ -1,42 +1,132 @@
-
 /* GENERAL */
-*{margin: 0;
- padding: 0;
- box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
- /* ROOT */
- :root {
-    --color-white: #ffffff;
-    --color-bg-color: #d9d9d9;
-    --color-primary: #7c69a4;
-    --color-dark-text: #4e3969;
-    --color-black: #282529;
-    --color-contrast: #fa961a;
-    --color-icon-red: #ea5556;
-    --color-icon-blue: #2871f0;
+/* ROOT */
+:root {
+  --color-white: #ffffff;
+  --color-bg-color: #d9d9d9;
+  --color-primary: #7c69a4;
+  --color-dark-text: #4e3969;
+  --color-black: #282529;
+  --color-contrast: #fa961a;
+  --color-icon-red: #ea5556;
+  --color-icon-blue: #2871f0;
 }
 
 /* FONTS */
-   /* HEADER */
-   .nerko-one-regular {
-    font-family: "Nerko One", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+/* HEADER */
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* BODY */
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 /* UTILITY */
-.margin-0-auto{margin: 0px auto;}
-.debug{border: 1px solid red;}
-.max-width-100{max-width: 100%;}
-.d-flex{display: flex;}
-.flex-wrap{flex-wrap: wrap;}
-.color-white{color: var(--color-white);}
+
+.debug {
+  border: 1px solid red;
+}
+.max-width-100 {
+  max-width: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.color-white {
+  color: var(--color-white);
+}
+.max-width-1200 {
+  max-width: 1200px;
+}
+.back-ground-main {
+  background-color: var(--color-bg-color);
+}
+
+.area{ margin-top: 20px;}
 
 /* HEADER */
-h1{
-color: var(--color-contrast);
-text-shadow: 2px 2px #b9b9b9ab;}
+h1 {
+  color: var(--color-contrast);
+  text-shadow: 2px 2px #b9b9b9ab;
+}
+
+/* MAIN */
+   /* SECTION-VIDEO */
+.dolci-e-desserts {
+  color: grey;
+  font-size: 0.8em;
+}
+.container {
+  margin: 0px auto;
+  flex-direction: column;
+}
+h2,
+.display-none {
+  color: var(--color-primary);
+}
+li{ margin-bottom: 15px;}
+
+li:first-child {
+  margin-bottom: 30px;
+}
+.iframe {
+  background-color: var(--color-white);
+  
+}
+.span-list{
+  font-weight: bold;
+ }
+.video-list{ list-style-type: none;
+margin: 20px 20px;}
+   /* end-section-video */
+
+   /* section- Social */
+.tag{display: flex;
+     justify-content: space-between;}
+.social{background-color: var(--color-white);
+border-radius: 30px;
+
+ padding: 2px 30px;}
+
+ /* END-section- Social */
+
+ /* section AD */
+ .banner{max-width: 100%;}
+/* END-SECTION AD */
+
+/* section presentation */
+.tiramisu-img, .presentation-img {height: 300px;
+    max-width: 400px;
+float: left;
+margin-right: 30px;
+}
+.tiramisu-img{max-width: 100%;}
+.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .presentation-title{ border-bottom: 2px solid var(--color-contrast);
+                          width: 50px;
+                         margin: 20px 0px;
+                         padding-bottom: 20px;}
+
+/* END-section peresentation */
+ 
 
 
 
@@ -48,28 +138,52 @@ text-shadow: 2px 2px #b9b9b9ab;}
 
 
 
-
-
-
-
-
-/* MEDIA-QUERRY */
+   /*---------------------- MEDIA-QUERRY--------------------- */
 /* MOBILE */
 @media screen and (max-width: 576px) {
-   h1{text-align: center;
-     margin: 0 auto;
-   }
+  h1 {text-align: center;
+      margin: 0 auto;}
+
+ .display-none { display: none;}
+ 
+.icon{display: none;
+      padding: 0px;}
+
+.iframe{flex-direction: column;}
+
+.banner{display: none;}
+
+.presentaion-container{
+   display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px 30px;}
+    .presentation-paragrafo{padding-top: 20px;}    
     
+}
+.presentaion-container .tiramisu-img {}
+
+
+
+}
+/* TABLET */
+@media screen  and (min-width: 768px)  {
+  h1 {
+    padding-left: 10px;
+  }
+  .iframe{flex-direction: column;}
+
+.icon{display: none;}
+ 
+ 
 }
 
-/* TABLET */
-@media screen and (min-width: 768px) {
-    h1{padding-left: 10px;}
-    
-}
 
 
 /* DESKTOP */
-@media screen and (min-width: 992px){ 
-    
+@media screen and (min-width: 992px) { 
+    .iframe{ flex-direction: row;}
+     .icon{display: inline-block;} 
+   .banner{display: block;}
+   
 }
