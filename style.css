@@ -77,9 +77,9 @@ h2,
 .display-none {
   color: var(--color-primary);
 }
-li{ margin-bottom: 15px;}
+.vid-list{ margin-bottom: 15px;}
 
-li:first-child {
+.vid-list:first-child {
   margin-bottom: 30px;
 }
 .iframe {
@@ -117,18 +117,28 @@ margin-right: 30px;
 .clearfix::after {
         content: "";
         clear: both;
-        display: table;
-      }
+        display: table;}
 
-      .presentation-title{ border-bottom: 2px solid var(--color-contrast);
+.presentation-title{ border-bottom: 2px solid var(--color-contrast);
                           width: 50px;
                          margin: 20px 0px;
                          padding-bottom: 20px;}
+                         .presentation-paragrafo{padding-bottom: 20px;}
 
 /* END-section peresentation */
  
-
-
+/* footer */
+#footer{background-color: var(--color-primary);
+      color: var(--color-white);
+      justify-content: space-between;
+    max-width: 100%;}
+.ul-footer{list-style-type: none;
+    display: flex;
+  padding: 10px 20px;}
+   a{color: var(--color-white);
+padding-right: 20px;}
+.left-footer{flex-direction: column;
+            padding: 10px 20px;}
 
 
 
@@ -158,14 +168,17 @@ margin-right: 30px;
         justify-content: center;
         flex-wrap: wrap;
         padding: 0px 30px;}
-    .presentation-paragrafo{padding-top: 20px;}    
+    .presentation-paragrafo{padding-top: 20px;}   
+    #footer{flex-direction: column;
+        margin: 0px auto;
+        align-items: center;} 
     
 }
-.presentaion-container .tiramisu-img {}
 
 
 
-}
+
+
 /* TABLET */
 @media screen  and (min-width: 768px)  {
   h1 {
@@ -174,7 +187,10 @@ margin-right: 30px;
   .iframe{flex-direction: column;}
 
 .icon{display: none;}
- 
+
+ #footer{flex-direction: column;
+    margin: 0px auto;
+    align-items: center;}
  
 }
 
@@ -185,5 +201,7 @@ margin-right: 30px;
     .iframe{ flex-direction: row;}
      .icon{display: inline-block;} 
    .banner{display: block;}
-   
+
+   #footer{flex-direction: row;
+   }
 }
