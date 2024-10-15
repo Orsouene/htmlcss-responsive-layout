@@ -61,7 +61,17 @@
 h1 {
   color: var(--color-contrast);
   text-shadow: 2px 2px #b9b9b9ab;
-}
+  animation: myfirst 5s 2;
+  animation-direction: alternate-reverse;
+  position: relative;}
+  @keyframes myfirst {
+    0%   { left: 0px; top: 0px;}
+    25%  { left: 200px; top: 0px;}
+    50%  { left: 200px; top: 200px;}
+    75%  { left: 0px; top: 200px;}
+    100% { left: 0px; top: 0px;}
+  }
+
 
 /* MAIN */
    /* SECTION-VIDEO */
@@ -179,7 +189,7 @@ padding-right: 20px;}
 }
 
 /* from tablet to mobile Aggunitiva */
-@media screen  and (min-width: 577px) {
+/* @media screen  and (min-width: 577px) {
     h1 {
       padding-left: 10px;
     }
@@ -191,7 +201,12 @@ padding-right: 20px;}
       margin: 0px auto;
       align-items: center;}
       .social{ padding: 2px 20px;}
-  }
+  
+      .video-list{display: flex;
+        flex-wrap: wrap;
+      gap: 35px;}
+.container{margin: 0px 105px;}
+} */
 
 
 /* TABLET */
