@@ -94,7 +94,7 @@ h2,
   margin-bottom: 30px;
   margin-left: 20px;
 }
-.iframe {
+.lista-preparazione {
   background-color: var(--color-white);
   
 }
@@ -226,7 +226,7 @@ padding-right: 20px;}
     .video-list{display: flex;
                     flex-wrap: wrap;
                   gap: 35px;}
-    .container{margin: 0px 105px;}
+    .container{margin: 0px 95px;}
 
  
 }
@@ -243,4 +243,8 @@ padding-right: 20px;}
    .social{ padding: 2px 30px;}
     .container {
       margin: 0px 100px;}
-  }
+  
+      .video-list{
+      gap: 0px;}
+  
+    }
